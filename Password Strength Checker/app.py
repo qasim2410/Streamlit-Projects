@@ -2,7 +2,11 @@ import re
 import streamlit as st
 
 # Page styling
-st.set_page_config(page_title="Password Strength Checker by Qasim Hussain", page_icon="🔑", layout="centered")
+st.set_page_config(
+    page_title="Password Strength Checker by Qasim Hussain",
+    page_icon="🔑",
+    layout="centered"
+)
 
 # Custom CSS
 st.markdown("""
@@ -48,7 +52,7 @@ def password_strength(password):
     else:
         feedback.append("❌ Password should include **at least one special character (!@#$%^&*)**.")
 
-    return score, feedback  # Fixed: Now returning values
+    return score, feedback
 
 # Get password input from user
 password = st.text_input("Enter Password", type="password", help="Ensure your password is strong and secure. 🔒")
