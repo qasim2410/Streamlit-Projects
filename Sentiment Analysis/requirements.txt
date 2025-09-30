@@ -1,4 +1,9 @@
 streamlit
+pandas
 plotly
-wordcloud
 matplotlib
+wordcloud
+numpy
+scikit-learn
+nltk
+textblob
